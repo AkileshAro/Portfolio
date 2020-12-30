@@ -1,0 +1,83 @@
+@import "~@fontsource/open-sans/index.css";
+@import "~@fontsource/open-sans/300.css";
+
+.main{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    width: 60%;
+    color: #444452;
+    .block-1{
+        font-size: 2vw;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .block-3{
+        font-size: 1.2vw;
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+    }
+    .block-2{
+        font-size: 2.5vw;
+        margin-bottom: 3rem;
+        span{font-weight: 600;}
+    }
+
+    .man-img, .wave-img, .point-img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .wave-img{
+        cursor: pointer;
+        &:hover{
+            animation: wave;
+            animation-duration: .2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 4;
+            animation-direction: alternate;
+        }
+    }
+
+    
+    .iconStyle{
+        height: 1.2rem;
+        width: 1.2rem;
+        opacity: .6;
+    }
+    
+    
+    .email{
+        cursor: pointer;
+        position: relative;
+        padding: 0 .5rem ;
+        transition: .1s all ease-in-out;
+        &:hover{
+            color: white;
+            &::after{
+                height: 1.8rem;
+            }
+        }
+    }
+    
+    .email:after{
+        transition: .1s all ease-in-out;
+        position: absolute;
+        content: '';
+        height: 0px;
+        width: 100%;
+        left: 0px;
+        bottom: -2px;
+        background: #007bff;
+        z-index: -1;
+        border-radius: 4px;
+    }
+    
+    @keyframes wave{
+        0% {transform: translate(0);}
+        100%{transform: translate(10px) rotate(45deg);}
+    }
+    
+}
+
