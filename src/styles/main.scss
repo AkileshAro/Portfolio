@@ -33,7 +33,7 @@
         cursor: pointer;
         &:hover{
             animation: wave;
-            animation-duration: .2s;
+            animation-duration: .15s;
             animation-timing-function: ease-in-out;
             animation-iteration-count: 4;
             animation-direction: alternate;
@@ -81,3 +81,6 @@
     
 }
 
+.dark{
+    color:#dadada !important
+}

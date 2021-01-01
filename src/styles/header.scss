@@ -8,7 +8,7 @@
     padding: 2rem 0;
     position: absolute;
     width: 80%;
-    .icon{
+    .header-icon{
         font-size: 2rem;
         color: #444452;
     }
@@ -58,4 +58,10 @@
     input:checked + .slider:before {transform: translateX(18px);}
 
     .slider, .slider:before {border-radius: 100px;}
+}
+
+.dark{
+    .header-icon{
+        color: #dadada;
+    }
 }
