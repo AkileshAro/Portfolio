@@ -20,8 +20,8 @@
     }
     .block-2{
         font-size: 2.5vw;
-        margin-bottom: 3rem;
         span{font-weight: 600;}
+        margin-bottom: 3rem;
     }
 
     .man-img, .wave-img, .point-img{
@@ -69,11 +69,13 @@
         width: 100%;
         left: 0px;
         bottom: -2px;
-        background: #007bff;
+        background: #486fff;
         z-index: -1;
         border-radius: 4px;
     }
-    
+
+
+
     @keyframes wave{
         0% {transform: translate(0);}
         100%{transform: translate(10px) rotate(45deg);}
@@ -81,6 +83,13 @@
     
 }
 
+
 .dark{
-    color:#dadada !important
+    color:#dadada !important;
+    .email:after{
+        background: #323f61;
+    }
 }
+
+
+

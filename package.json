@@ -18,6 +18,7 @@
   "dependencies": {
     "@fontsource/major-mono-display": "^4.0.1",
     "@fontsource/open-sans": "^4.0.1",
+    "@material-ui/core": "^4.11.2",
     "gatsby": "^2.26.1",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.8.0",

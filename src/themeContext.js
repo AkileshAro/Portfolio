@@ -8,7 +8,7 @@ const ThemeProvider = ({ children }) => {
     const changeTheme = (theme) => {
         setTheme(theme);
         if (theme === 'dark') {
-            document.body.style.background = 'rgb(22 33 42)'
+            document.body.style.background = '#15192a'
         } else {
             document.body.style.background = '#fff'
         }

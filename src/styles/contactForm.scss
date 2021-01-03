@@ -1,0 +1,99 @@
+// @import "~@fontsource/open-sans/index.css";
+@import "~@fontsource/open-sans/300.css";
+
+.contactForm{
+    background: white;
+    height: 100%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #1e263a;
+    padding: 2rem;
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #a1a1a1;
+        opacity: 1; /* Firefox */
+    }
+    p{margin:  .2rem 0;}
+    .subtitle{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cancel{
+        height: 1rem;
+        fill: #7c7c7c;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+        // display: none;
+    }
+    
+    .form-controls{
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        input, textarea{
+            background: rgb(238, 238, 238);
+            color: #1e263a;
+            font-weight: 300;
+            font-size: .9rem;
+            font-family: 'Open Sans';
+            margin: .5rem 0;
+            border: 0px;
+            padding: .5rem;
+            outline: none;
+            border-radius: 3px;
+        }
+
+        .message{
+         margin-bottom: 1rem;
+        }
+    }
+
+    button{
+        padding: .8rem .5rem;
+        border-radius: 3px;
+        border: 0px;
+        font-family: 'Open Sans';
+        cursor: pointer;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: .2s all ease-in-out;
+        background:#6788ff;
+        outline: none;
+        &:hover{
+            box-shadow: 0px 5px 10px rgba(0,0,0, .2);
+        }
+    }
+}
+
+.contactForm-dark{
+    background: #1e263a;
+    color: #dadada;
+    .form-controls{
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #a7a7a7;
+            opacity: 1; /* Firefox */
+        }
+        input, textarea{
+            background: #191f30;
+            color: white;
+        }
+    }
+    button{
+        background: #121623;
+        color: #dadada;
+    }
+}
+
+.MuiPaper-elevation16{
+    box-shadow : 0px 0px 50px 5px rgba(0, 0, 0, 0.1) !important
+}
