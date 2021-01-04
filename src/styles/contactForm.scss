@@ -23,16 +23,7 @@
         margin-bottom: 2rem;
     }
 
-    .cancel{
-        height: 1rem;
-        fill: #7c7c7c;
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        transition: .3s ease-in-out;
-        cursor: pointer;
-        // display: none;
-    }
+    
     
     .form-controls{
         margin-bottom: 2rem;
@@ -56,7 +47,11 @@
         }
     }
 
-    button{
+    .submitButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
         padding: .8rem .5rem;
         border-radius: 3px;
         border: 0px;
@@ -71,6 +66,12 @@
         outline: none;
         &:hover{
             box-shadow: 0px 5px 10px rgba(0,0,0, .2);
+        }
+
+        .loader{
+            height: 1.1rem !important;
+            width: 1.1rem !important;
+            color: white;
         }
     }
 }
@@ -88,7 +89,7 @@
             color: white;
         }
     }
-    button{
+    .submitButton{
         background: #121623;
         color: #dadada;
     }
@@ -96,4 +97,22 @@
 
 .MuiPaper-elevation16{
     box-shadow : 0px 0px 50px 5px rgba(0, 0, 0, 0.1) !important
+}
+
+.snackBar{
+    .MuiPaper-root{
+        letter-spacing: 1px;
+        font-family: 'Open Sans';
+        box-shadow: 1px 10px 10px rgba(0,0,0,.05) !important;
+    }
+}
+
+.snackBar-dark{
+    .MuiPaper-root{
+        letter-spacing: 1px;
+        font-family: 'Open Sans';
+        box-shadow: 1px 10px 10px rgba(0,0,0,.05) !important;
+        color: black;
+        font-weight: 600;
+    }
 }

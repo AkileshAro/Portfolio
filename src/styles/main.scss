@@ -40,7 +40,6 @@
         }
     }
 
-    
     .iconStyle{
         height: 1.2rem;
         width: 1.2rem;
@@ -92,4 +91,13 @@
 }
 
 
-
+.cancel{
+    height: 1rem;
+    fill: #7c7c7c;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    // display: none;  
+}
