@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import '../../styles/contactForm.scss'
 import { ThemeContext } from '../../themeContext'
 import emailjs from 'emailjs-com'

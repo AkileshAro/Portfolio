@@ -13,9 +13,6 @@ const Main = () => {
     const [isOpen, setIsOpen] = useState(false)
     const { theme } = useContext(ThemeContext)
 
-
-
-
     return (
         <div className={`main ${theme === 'dark' ? 'dark' : ''}`} >
             <p className='block block-1'>Hey there! <img src={wave} className='wave-img' /></p>
