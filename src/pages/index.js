@@ -3,16 +3,19 @@ import '../styles/global.css'
 import Header from './components/header'
 import Main from './components/main'
 import Socials from './components/socials'
+import RootLayout from './components/rootLayout'
 
 const IndexPage = () => {
   return (
-    <div className='container'>
-      <Header />
-      <div className='center'>
-        <Main />
-        <Socials />
+    <RootLayout>
+      <div className='container'>
+        <Header />
+        <div className='center'>
+          <Main />
+          <Socials />
+        </div>
       </div>
-    </div>
+    </RootLayout>
   )
 }
 
