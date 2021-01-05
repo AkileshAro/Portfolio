@@ -1,17 +1,16 @@
 .socials  {
-    opacity: .5;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: .8rem;
+    gap: 1rem;
     align-self: flex-end;
     margin-bottom: 1rem;
 
     .icon  {
         cursor: pointer;
-        height: 1.2rem;
-        width: 1.2rem;
-        opacity: .6;
+        height: 1.3vw;
+        width: 1.3vw;
+        opacity: .4;
         transition: .3s;
         &:hover{
             fill: #007BFF;
@@ -24,24 +23,54 @@
         height: 2rem;
         width: 1px;
         background: black;
-        opacity: .2;
+        opacity: .3;
     }
 }
 
 .dark{
     .icon{
         fill: #fff;
-        opacity: 1;
+        opacity: .5;
         &:hover{
-            fill: #ffffff;
+            // fill: #ffffff;
             transform: scale(1.2);
-            opacity: 1;
             fill: #9acbff;
+            opacity: 1;
         }
     }
 
     .line{
         background: #dadada;
         opacity: 1;
+    }
+}
+
+@media(max-width:1025px){
+    .socials{
+        .icon{
+            height: 1.2rem;
+            width: 1.2rem;
+        } 
+    }
+}
+
+@media(max-width:769px){
+    .socials{
+        gap: .8rem;
+        .icon{
+            height: 1rem;
+            width: 1rem;
+        } 
+    }
+}
+
+@media(max-width:426px){
+    .socials{
+        flex-direction: row;
+        align-self: flex-end;
+        gap: 1rem;
+        .line{
+            display: none;
+        }
     }
 }

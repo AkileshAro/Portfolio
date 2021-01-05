@@ -87,7 +87,7 @@ const ContactForm = () => {
                 Send message {loading ? <CircularProgress className='loader' /> : null}
                 {/* {loading ? <CircularProgress style={{ height: "1.1rem", width: "1.1rem" }} /> : "Send message"} */}
             </button>
-            <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={snackOpen} autoHideDuration={500000} onClose={() => setSnackOpen(false)} className={`snackBar ${theme === 'dark' ? 'snackBar-dark' : ''}`}>
+            <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={snackOpen} autoHideDuration={5000} onClose={() => setSnackOpen(false)} className={`snackBar ${theme === 'dark' ? 'snackBar-dark' : ''}`}>
                 <Alert onClose={() => setSnackOpen(false)} severity={mailState.status}>
                     {mailState.message}
                 </Alert>

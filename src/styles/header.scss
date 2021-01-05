@@ -9,7 +9,7 @@
     position: absolute;
     width: 80%;
     .header-icon{
-        font-size: 2rem;
+        font-size: 2vw;
         color: #444452;
     }
 
@@ -63,5 +63,33 @@
 .dark{
     .header-icon{
         color: #dadada;
+    }
+}
+
+@media(max-width : 1025px){
+    .header{
+        .header-icon{
+            font-size : 1.5rem;
+        }
+        .switch{
+            width: 32px;
+            height:  18px;
+        }
+
+        .slider:before{
+            height: 12px;
+            width: 12px;
+            top: 2.5px;
+            left: 4px;
+        }
+
+        input:checked + .slider:before {transform: translateX(12px);}
+
+    }
+}
+
+@media(max-width : 426px){
+    .header{
+        width: 85%;
     }
 }

@@ -1,5 +1,7 @@
 
-* {box-sizing: border-box;}
+* {box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
 
 body{
     margin: 0;
@@ -20,5 +22,14 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 100%;
+}
+
+@media(max-width:426px){
+    .container{
+        width: 85%;
+    }
+    .center{
+        flex-direction: column;
+    }
 }
 

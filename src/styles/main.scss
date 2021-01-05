@@ -7,35 +7,35 @@
     width: 60%;
     color: #444452;
     .block-1{
-        font-size: 2vw;
+        font-size: 1.8vw;
         display: flex;
         align-items: center;
         gap: 1rem;
     }
     .block-3{
-        font-size: 1.2vw;
+        font-size: 1.4vw;
         display: flex;
         align-items: center;
         gap: .6rem;
     }
     .block-2{
-        font-size: 2.5vw;
+        font-size: 2.2vw;
         span{font-weight: 600;}
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
     }
 
     .man-img, .wave-img, .point-img{
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.2vw;
+        height: 2.2vw;
     }
 
     .wave-img{
         cursor: pointer;
         &:hover{
-            animation: wave;
+            animation: wave ;
             animation-duration: .15s;
             animation-timing-function: ease-in-out;
-            animation-iteration-count: 4;
+            animation-iteration-count: infinite;
             animation-direction: alternate;
         }
     }
@@ -50,7 +50,7 @@
     .email{
         cursor: pointer;
         position: relative;
-        padding: 0 .5rem ;
+        padding: 0 .5rem  ;
         transition: .1s all ease-in-out;
         &:hover{
             color: white;
@@ -67,13 +67,23 @@
         height: 0px;
         width: 100%;
         left: 0px;
-        bottom: -2px;
+        bottom: -1px;
         background: #486fff;
         z-index: -1;
         border-radius: 4px;
+        outline: none;
     }
 
-
+    .wave{
+        cursor: pointer;
+        &:hover{
+            animation: wave ;
+            animation-duration: .15s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    }
 
     @keyframes wave{
         0% {transform: translate(0);}
@@ -92,12 +102,77 @@
 
 
 .cancel{
-    height: 1rem;
+    height: 1vw;
     fill: #7c7c7c;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 2vw;
+    right: 2vw;
     transition: .3s ease-in-out;
     cursor: pointer;
     // display: none;  
+}
+
+
+@media(max-width:1025px){
+    .main{
+        width: 70%;
+        .block-1{font-size: 1.8rem;}
+        .block-2{font-size: 2rem;}
+        .block-3{font-size: 1.3rem;}
+        .man-img, .wave-img, .point-img{
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+
+    .cancel{
+        top: 1.5rem;
+        right: 1.5rem;
+        height: 1rem;
+    }
+}
+
+@media(max-width:769px){
+    .main{
+        .block-1{font-size: 1.2rem;}
+        .block-2{font-size: 1.5rem;margin-bottom: 2rem;}
+        .block-3{font-size: 1rem;}
+        .man-img, .wave-img, .point-img{
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+        .email{
+            &:hover{
+                &::after{
+                    height: 1.4rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:426px){
+    .main{
+        width: 100%;
+        .block-1{font-size: 1rem; margin: 1rem 0; gap: .5rem;}
+        .block-2{font-size: 1.2rem; margin: 1rem 0;}
+        .block-3{font-size: .9rem; margin: 1rem 0;}
+        .man-img, .wave-img, .point-img{
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+        justify-content: center;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .email{
+            &:hover{
+                &::after{
+                    height: 1.4rem;
+                }
+            }
+        }
+    }
 }
