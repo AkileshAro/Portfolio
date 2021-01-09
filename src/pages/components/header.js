@@ -14,7 +14,7 @@ const Header = () => {
     }
 
     return (
-        <div className={`header ${theme === 'dark' ? "dark" : ''}`}>
+        <header className={`header ${theme === 'dark' ? "dark" : ''}`}>
             <div className="header-icon">
                 AR
             </div>
@@ -24,7 +24,7 @@ const Header = () => {
                     <span className="slider"></span>
                 </label>
             </div>
-        </div>
+        </header>
     )
 }
 

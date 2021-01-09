@@ -58,26 +58,32 @@ const ContactForm = () => {
             <p className='title'>Say something nice!</p>
             <p className='subtitle'>My inbox is always open!</p>
             <div className='form-controls'>
-                <input
-                    type="text"
-                    placeholder='Email'
-                    className='email'
-                    onChange={e => handleChange(e)}
-                    name='email'
-                    value={email}
-                    disabled={loading === true ? true : false}
-                />
-                <textarea
-                    type="text"
-                    placeholder='Message'
-                    className='message'
-                    rows='3'
-                    style={{ resize: 'none' }}
-                    onChange={e => handleChange(e)}
-                    name='message'
-                    value={message}
-                    disabled={loading === true ? true : false}
-                ></textarea>
+                <label htmlFor='email'>
+                    <input
+                        type="text"
+                        placeholder='Email'
+                        className='email'
+                        onChange={e => handleChange(e)}
+                        name='email'
+                        id='email'
+                        value={email}
+                        disabled={loading === true ? true : false}
+                    />
+                </label>
+                <label htmlFor='message'>
+                    <textarea
+                        type="text"
+                        placeholder='Message'
+                        className='message'
+                        rows='3'
+                        id='message'
+                        style={{ resize: 'none' }}
+                        onChange={e => handleChange(e)}
+                        name='message'
+                        value={message}
+                        disabled={loading === true ? true : false}
+                    ></textarea>
+                </label>
             </div>
             <button
                 onClick={sendMail}
@@ -85,7 +91,6 @@ const ContactForm = () => {
                 disabled={loading === true ? true : false}
             >
                 Send message {loading ? <CircularProgress className='loader' /> : null}
-                {/* {loading ? <CircularProgress style={{ height: "1.1rem", width: "1.1rem" }} /> : "Send message"} */}
             </button>
             <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={snackOpen} autoHideDuration={5000} onClose={() => setSnackOpen(false)} className={`snackBar ${theme === 'dark' ? 'snackBar-dark' : ''}`}>
                 <Alert onClose={() => setSnackOpen(false)} severity={mailState.status}>
