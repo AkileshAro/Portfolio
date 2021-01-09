@@ -6,7 +6,7 @@
 body{
     margin: 0;
     padding: 0;
-    transition: .3s;
+    transition: 1s all ease-in-out;
 }
 
 .container{
