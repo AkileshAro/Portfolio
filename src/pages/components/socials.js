@@ -7,17 +7,18 @@ import Medium from '../../assets/medium.svg'
 import Github from '../../assets/github.svg'
 import '../../styles/socials.scss'
 import { ThemeContext } from '../../themeContext'
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const Socials = () => {
     const { theme } = useContext(ThemeContext)
     return (
         <div className={`socials ${theme === 'dark' ? "dark" : ''}`}>
-            <a href="https://twitter.com/absenceofhumour" target='blank'><Twitter className='icon' /></a>
-            <a href="https://www.instagram.com/disco_pilots/" target='blank'><Instagram className='icon' /></a>
-            <a href="https://dribbble.com/AkileshAro" target='blank'><Dribbble className='icon' /></a>
-            <a href="https://www.linkedin.com/in/akilesh-rao-610357137/" target='blank'><LinkedIn className='icon' /></a>
-            <a href="https://medium.com/@akileshrao19" target='blank'><Medium className='icon' /></a>
-            <a href="https://github.com/AkileshAro" target='blank'><Github className='icon' /></a>
+            <OutboundLink href="https://twitter.com/absenceofhumour" target='blank'><Twitter className='icon' /></OutboundLink>
+            <OutboundLink href="https://www.instagram.com/disco_pilots/" target='blank'><Instagram className='icon' /></OutboundLink>
+            <OutboundLink href="https://dribbble.com/AkileshAro" target='blank'><Dribbble className='icon' /></OutboundLink>
+            <OutboundLink href="https://www.linkedin.com/in/akilesh-rao-610357137/" target='blank'><LinkedIn className='icon' /></OutboundLink>
+            <OutboundLink href="https://medium.com/@akileshrao19" target='blank'><Medium className='icon' /></OutboundLink>
+            <OutboundLink href="https://github.com/AkileshAro" target='blank'><Github className='icon' /></OutboundLink>
             <div className='line'></div>
         </div>
     )

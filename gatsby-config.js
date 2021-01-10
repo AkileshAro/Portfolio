@@ -5,6 +5,18 @@ module.exports = {
   },
   plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`, 'gatsby-plugin-robots-txt',
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-186917962-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        exclude: [],
+        pageTransitionDelay: 0,
+        defer: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Akilesh Rao`,
