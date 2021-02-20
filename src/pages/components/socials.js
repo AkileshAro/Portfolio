@@ -18,7 +18,7 @@ const Socials = () => {
             <OutboundLink href="https://dribbble.com/AkileshAro" target='blank'><Dribbble className='icon' /></OutboundLink>
             <OutboundLink href="https://www.linkedin.com/in/akilesh-rao-610357137/" target='blank'><LinkedIn className='icon' /></OutboundLink>
             <OutboundLink href="https://medium.com/@akileshrao19" target='blank'><Medium className='icon' /></OutboundLink>
-            <OutboundLink href="https://github.com/AkileshAro" target='blank'><Github className='icon' /></OutboundLink>
+            <OutboundLink href="https://github.com/AkileshRao" target='blank'><Github className='icon' /></OutboundLink>
             <div className='line'></div>
         </div>
     )
